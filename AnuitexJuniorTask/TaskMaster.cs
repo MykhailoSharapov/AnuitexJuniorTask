@@ -7,34 +7,34 @@ namespace AnuitexJuniorTask
     /// <summary>
     /// Worker class.
     /// </summary>
-    public class Manager : Employee
+    public class TaskMaster : Employee
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Manager"/> class.
+        /// Initializes a new instance of the <see cref="TaskMaster"/> class.
         /// </summary>
         /// <param name="fullName">Full Name of worker.</param>
         /// <param name="expierence">Expirience in years.</param>
-        public Manager(string fullName, int expierence)
+        public TaskMaster(string fullName, int expierence)
             : base(fullName, expierence)
         {
         }
 
         /// <summary>
-        /// Some work of manager.
+        /// Some work of task master.
         /// </summary>
         /// <returns>Result of work.</returns>
         public override string Work()
         {
-            return "Order collecting";
+            return "Material purchasing";
         }
 
         /// <summary>
-        /// Task giving to someone.
+        /// TaskMaster check Workers.
         /// </summary>
-        /// <returns>some verbal task.</returns>
-        public string GiveTask()
+        /// <returns>Message of start checking.</returns>
+        public string WorkersCheck()
         {
-            return "Giving a task.";
+            return "Start checking workers.";
         }
     }
 }
