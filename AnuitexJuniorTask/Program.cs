@@ -10,9 +10,22 @@ namespace AnuitexJuniorTask
     {
         static void Main(string[] args)
         {
-            var w = new Worker("Mike", 1);
-            Console.WriteLine(w.FullName);
-            Console.WriteLine(w.Expierence);
+            var worker = new Worker("Mike", 1);
+            var workerone = new Worker("Sharapov", 1000);
+            Console.WriteLine(worker.FullName);
+            Console.WriteLine(worker.Expierence);
+
+            Console.WriteLine("------------");
+            var company = new Company();
+            _ = company + worker;
+            _ = company + worker;
+            _ = company + worker;
+            _ = company + worker;
+            _ = company + worker;
+            _ = company + worker;
+            _ = company + workerone;
+            _ = company - worker;
+            Console.WriteLine(company.Employees.Count);
             Console.ReadKey();
         }
     }
