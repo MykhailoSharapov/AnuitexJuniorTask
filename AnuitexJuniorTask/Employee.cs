@@ -33,6 +33,6 @@ namespace AnuitexJuniorTask
         /// <summary>
         /// Some work.
         /// </summary>
-        public abstract void Work();
+        public abstract string Work();
     }
 }

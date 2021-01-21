@@ -10,6 +10,10 @@ namespace AnuitexJuniorTask
     {
         static void Main(string[] args)
         {
+            var w = new Worker("Mike", 1);
+            Console.WriteLine(w.FullName);
+            Console.WriteLine(w.Expierence);
+            Console.ReadKey();
         }
     }
 }
