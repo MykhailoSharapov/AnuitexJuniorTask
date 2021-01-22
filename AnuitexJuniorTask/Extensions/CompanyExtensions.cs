@@ -1,4 +1,8 @@
-﻿namespace AnuitexJuniorTask
+﻿// <copyright file="Company.cs" company="MikeSharapov">
+// Copyright (c) MikeSharapov. All rights reserved.
+// </copyright>
+
+namespace AnuitexJuniorTask
 {
     using System;
     using System.Collections.Generic;
