@@ -35,5 +35,45 @@ namespace AnuitexJuniorTask
             company.Employees.Remove(ee);
             return null;
         }
+
+        /// <summary>
+        /// Get emloyers list ordered by type of employee.
+        /// </summary>
+        /// <typeparam name="T">Type of worker manager, worker etc.</typeparam>
+        /// <returns>List of result.</returns>
+        public List<T> GetEmployersByType<T>()
+            where T : Employee
+        {
+            var result = new List<T>();
+            foreach (Employee employee in this.Employees)
+            {
+                if (employee is T)
+                {
+                    result.Add(employee as T);
+                }
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Get emloyers count ordered by type of employee.
+        /// </summary>
+        /// <typeparam name="T">Type of worker manager, worker etc.</typeparam>
+        /// <returns>Count.</returns>
+        public int GetEmployersCountByType<T>()
+            where T : Employee
+        {
+            var result = 0;
+            foreach (Employee employee in this.Employees)
+            {
+                if (employee is T)
+                {
+                    result++;
+                }
+            }
+
+            return result;
+        }
     }
 }

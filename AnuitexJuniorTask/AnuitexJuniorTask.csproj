@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Company.cs" />
+    <Compile Include="Extensions\CompanyExtensions.cs" />
     <Compile Include="Employers\Employee.cs" />
     <Compile Include="Employers\Manager.cs" />
     <Compile Include="Program.cs" />
