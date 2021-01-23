@@ -2,10 +2,10 @@
 // Copyright (c) MikeSharapov. All rights reserved.
 // </copyright>
 
+using System.Collections.Generic;
+
 namespace AnuitexJuniorTask
 {
-    using System.Collections.Generic;
-
     /// <summary>
     /// Company class with list of employers.
     /// </summary>
@@ -27,13 +27,13 @@ namespace AnuitexJuniorTask
         public static Company operator +(Company company, Employee ee)
         {
             company.Employees.Add(ee);
-            return null;
+            return company;
         }
 
         public static Company operator -(Company company, Employee ee)
         {
             company.Employees.Remove(ee);
-            return null;
+            return company;
         }
 
         /// <summary>

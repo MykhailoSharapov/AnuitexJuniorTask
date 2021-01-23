@@ -2,14 +2,10 @@
 // Copyright (c) MikeSharapov. All rights reserved.
 // </copyright>
 
+using System.Linq;
+
 namespace AnuitexJuniorTask
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
     /// <summary>
     /// Extensions for work with emloyers list.
     /// </summary>
@@ -34,7 +30,7 @@ namespace AnuitexJuniorTask
         {
             foreach (Employee employee in company.Employees)
             {
-                Console.WriteLine($"FullName: { employee.FullName}, Expirience in years: {employee.Expierence}");
+                Program.PrintLog($"FullName: { employee.FullName}, Expirience: {employee.Expierence}");
             }
         }
     }

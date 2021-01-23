@@ -2,6 +2,8 @@
 // Copyright (c) MikeSharapov. All rights reserved.
 // </copyright>
 
+using System;
+
 namespace AnuitexJuniorTask
 {
     /// <summary>
@@ -12,20 +14,20 @@ namespace AnuitexJuniorTask
         /// <summary>
         /// Initializes a new instance of the <see cref="Worker"/> class.
         /// </summary>
-        /// <param name="fullName">Full Name of worker.</param>
-        /// <param name="expierence">Expirience in years.</param>
-        public Worker(string fullName, int expierence)
-            : base(fullName,expierence)
+        /// <param name="firstName">First Name of worker.</param>
+        /// <param name="lastName">Last Name of worker.</param>
+        /// <param name="expierence">Expirience in company.</param>
+        public Worker(string firstName, string lastName)
+            : base(firstName, lastName)
         {
         }
 
         /// <summary>
         /// Some work of worker.
         /// </summary>
-        /// <returns>Result of work.</returns>
-        public override string Work()
+        public override void Work()
         {
-            return "Product release";
+            // "Product release";
         }
     }
 }

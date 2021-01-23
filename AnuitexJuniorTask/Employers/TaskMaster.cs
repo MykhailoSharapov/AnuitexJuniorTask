@@ -2,39 +2,41 @@
 // Copyright (c) MikeSharapov. All rights reserved.
 // </copyright>
 
+using System;
+
 namespace AnuitexJuniorTask
 {
     /// <summary>
     /// Worker class.
     /// </summary>
-    public class TaskMaster : Employee
+    public class Taskmaster : Employee
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="TaskMaster"/> class.
+        /// Initializes a new instance of the <see cref="Taskmaster"/> class.
         /// </summary>
-        /// <param name="fullName">Full Name of worker.</param>
-        /// <param name="expierence">Expirience in years.</param>
-        public TaskMaster(string fullName, int expierence)
-            : base(fullName, expierence)
+        /// <param name="firstName">First Name of taskmater.</param>
+        /// <param name="lastName">Last Name of taskmaster.</param>
+        public Taskmaster(string firstName, string lastName)
+            : base(firstName, lastName)
         {
         }
 
         /// <summary>
         /// Some work of task master.
         /// </summary>
-        /// <returns>Result of work.</returns>
-        public override string Work()
+        public override void Work()
         {
-            return "Material purchasing";
+            //"Material purchasing";
         }
 
         /// <summary>
         /// TaskMaster check Workers.
         /// </summary>
         /// <returns>Message of start checking.</returns>
-        public string WorkersCheck()
+        public bool WorkersCheck()
         {
-            return "Start checking workers.";
+            Program.PrintLog("Start checking workers.");
+            return false;
         }
     }
 }

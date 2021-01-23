@@ -49,9 +49,8 @@
     <Compile Include="Employers\Manager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Employers\TaskMaster.cs" />
+    <Compile Include="Employers\Taskmaster.cs" />
     <Compile Include="Employers\Worker.cs" />
-    <Compile Include="Starter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

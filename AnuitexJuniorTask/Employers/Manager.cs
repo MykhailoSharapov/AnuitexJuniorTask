@@ -2,6 +2,8 @@
 // Copyright (c) MikeSharapov. All rights reserved.
 // </copyright>
 
+using System;
+
 namespace AnuitexJuniorTask
 {
     /// <summary>
@@ -12,29 +14,27 @@ namespace AnuitexJuniorTask
         /// <summary>
         /// Initializes a new instance of the <see cref="Manager"/> class.
         /// </summary>
-        /// <param name="fullName">Full Name of worker.</param>
-        /// <param name="expierence">Expirience in years.</param>
-        public Manager(string fullName, int expierence)
-            : base(fullName, expierence)
+        /// <param name="firstName">First Name of manager.</param>
+        /// <param name="lastName">Last Name of manager.</param>
+        public Manager(string firstName, string lastName)
+            : base(firstName, lastName)
         {
         }
 
         /// <summary>
         /// Some work of manager.
         /// </summary>
-        /// <returns>Result of work.</returns>
-        public override string Work()
+        public override void Work()
         {
-            return "Order collecting";
+            //Collecting order.
         }
 
         /// <summary>
         /// Task giving to someone.
         /// </summary>
-        /// <returns>some verbal task.</returns>
-        public string GiveTask()
+        public void GiveTask()
         {
-            return "Giving a task.";
+            Program.PrintLog("Task give");
         }
     }
 }
